@@ -14,7 +14,7 @@ public class Human
 
 void main(){
     Human myHuman = new Human();
-    myHuman.Race = "Black";
+    myHuman.Race = "White";
     myHuman.Age = 24;
     myHuman.Weight = "110lbs";
 

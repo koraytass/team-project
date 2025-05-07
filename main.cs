@@ -8,7 +8,7 @@ public class Human
 
     public void Purchase()
     {
-        Console.WriteLine($"You already bought a/an ${Race}-${Age} human before.");
+        Console.WriteLine($"You bought a/an ${Race}-${Age} human. Don't forget to feed them.");
     }
 }
 
@@ -19,6 +19,5 @@ void main(){
     myHuman.Weight = "110lbs";
 
     myHuman.Purchase();
-    
 
 }

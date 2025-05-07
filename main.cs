@@ -12,12 +12,14 @@ public class Human
     }
 }
 
-void main(){
-    Human myHuman = new Human();
-    myHuman.Race = "White";
-    myHuman.Age = 24;
-    myHuman.Weight = "110lbs";
+public class Program
+{
+    public static void Main()
+    {
+        Human myHuman = new Human();
+        myHuman.Race = "White";
+        myHuman.Weight = "110lbs";
+        myHuman.Age = 21;
 
-    myHuman.Purchase();
-
+    }
 }

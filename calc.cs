@@ -31,14 +31,30 @@ namespace HelloWorld
 		public static void Main(string[] args)
 		{
             Console.Write("1. Sayı: ");
-		  double sayi = Convert.ToDouble(Console.ReadLine());
+		  double x = Convert.ToDouble(Console.ReadLine());
           Console.Write("\n2. Sayı: ");
-		  double sayi1 = Convert.ToDouble(Console.ReadLine());
+		  double y = Convert.ToDouble(Console.ReadLine());
 		  Calculator calc = new Calculator();
-		  Console.WriteLine(calc.sum(sayi1, sayi));
-		  Console.WriteLine(calc.substract(sayi1, sayi));
-		  Console.WriteLine(calc.divide(sayi1, sayi));
-		  Console.WriteLine(calc.multiply(sayi1, sayi));
+		  Console.WriteLine("Choose operation (+,-,*,/)");
+          string operation = Console.ReadLine("");
+          switch (operation)
+          {
+			 case "+":
+                System.Console.WriteLine(calc.sum(x,y));
+				  break;
+            case "-":
+                System.Console.WriteLine(calc.substract(x,y));
+                break;
+            case "*":
+                System.Console.WriteLine(calc.multiply(x,y));
+                break;
+            case "/":
+                System.Console.WriteLine(calc.divide(x,y));
+                break;
+
+            default:
+                System.Console.WriteLine("Womp womp idk what u sayin");
+          }
 		}
 	}
 }

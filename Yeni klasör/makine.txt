@@ -1,0 +1,64 @@
+using System;
+					
+public class Calculator
+{
+	public double Add(double a, double b)
+	{
+		return a + b;
+	}
+	
+	public double Subtract(double a, double b)
+	{
+		return a - b;
+	}
+	
+	public double Multiply(double a, double b)
+	{
+		return a * b;
+}
+	public double Divide(double a , double b)
+	{
+		if (b == 0)
+		{
+			Console.WriteLine("Error: Cannot divide by zero!");
+			return 0;
+		}
+		return a / b;
+	}
+}
+     public class Program
+	 {
+		 public static void Main()
+		 {
+			 Calculator calc = new Calculator();
+			 
+			 Console.WriteLine("Enter first number;");
+			 double num1 = Convert.ToDouble(Console.ReadLine());
+			 
+			 Console.WriteLine("Enter second number:");
+			 double num2 = Convert.ToDouble(Console.ReadLine());
+			 
+			 Console.WriteLine("Choose operation (=, -, *, /_):");
+			 string operation = Console.ReadLine();
+			 
+	     	 double result = 0;
+             
+			 switch (operation)
+			 {
+				 case "+":
+					 result = calc.Add(num1, num2);
+					 break;
+	              case"-":
+					 result = calc.Subtract(num1, num2);
+					 break;
+				  case "*":
+					 result = calc.Multiply(num1, num2);
+					 break;
+				  case"/": 
+					 result = calc.Divide(num1, num2);
+					 break;
+				  default:break;
+			 }
+			 Console.WriteLine($"Result: {result}");
+		 }
+	 }

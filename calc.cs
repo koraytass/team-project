@@ -13,9 +13,9 @@ namespace HelloWorld
       return x-y;  
     }
     public double divide(double x, double y){
-      if(x == 0 || y == 0) return {
+      if(x == 0 || y == 0) {
+		Console.WriteLine("Cannot be divided 0");
         return 0;
-        Console.WriteLine("Cannot be divided 0");
       }
       return (x/y);
     }
@@ -30,8 +30,10 @@ namespace HelloWorld
 	{
 		public static void Main(string[] args)
 		{
-		  double sayi = 13;
-		  double sayi1 = 41;
+            Console.Write("1. Sayı: ");
+		  double sayi = Convert.ToDouble(Console.ReadLine());
+          Console.Write("\n2. Sayı: ");
+		  double sayi1 = Convert.ToDouble(Console.ReadLine());
 		  Calculator calc = new Calculator();
 		  Console.WriteLine(calc.sum(sayi1, sayi));
 		  Console.WriteLine(calc.substract(sayi1, sayi));

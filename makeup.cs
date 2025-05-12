@@ -13,6 +13,29 @@ public class Makeup
         Names = new string[size];
         Types = new string[size];
         Prices = new double[size];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
 	 } 
 
 		public void Introduce(int index)

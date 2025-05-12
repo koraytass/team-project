@@ -49,15 +49,19 @@ public class Program
             case "+":
             result = calc.add(num1, num2);
             break;
+
             case "-":
             result = calc.sub(num1, num2);
             break;
+
             case "*":
             result = calc.mul(num1, num2);
             break;
+
             case "/":
             result = calc.div(num1, num2);
             break;
+
             default:
             Console.WriteLine("invalid operation");
             break;
